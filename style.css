@@ -401,9 +401,9 @@ section#hero {
 .sectionTopHeading {
     width: 85%;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 7%;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 4%;
 }
 
 .sectionTopHeading h1 {
@@ -411,7 +411,7 @@ section#hero {
     margin-bottom: 20px;
     background-image: linear-gradient(
         to right,
-        var(--theme-primary) 30%,
+        var(--theme-primary) 0%,
         #ffffff 100%
     );
     -webkit-text-fill-color: transparent;
@@ -541,7 +541,7 @@ section#works {
 
 .workList {
     width: 85%;
-    margin: auto;
+    margin: 60px auto;
     display: grid;
     grid-template-columns: 47% 47%;
     justify-content: space-between;
@@ -616,6 +616,152 @@ section#works {
     background: radial-gradient(
         circle,
         var(--theme-secondary) 0%,
-        var(--theme-accent-bg-light) 25%
+        var(--theme-accent-bg-light) 40%
     );
+}
+section#resume {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+    align-content: center;
+    align-items: flex-start;
+    width: 85%;
+    margin: 80px auto;
+    padding: 20px 0px;
+}
+
+.expTopHead {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.expTopHead i::before {
+    font-size: 40px;
+    color: var(--theme-primary);
+}
+
+.expTopHeadTitle h1 {
+    font-size: 45px;
+    background-image: linear-gradient(
+        to right,
+        var(--theme-primary) 0%,
+        #ffffff 100%
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-left: 10px;
+}
+
+.singleTile {
+    background: var(--theme-accent-2);
+    padding: 20px 30px;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.singleTile h3 {
+    color: var(--theme-primary);
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.singleTile h2 {
+    margin-bottom: 10px;
+}
+
+.singleTile p {
+    color: #dddddd;
+}
+
+.singleTile::before {
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        var(--theme-primary) 0%,
+        var(--theme-secondary) 100%
+    );
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.singleTile:hover::before {
+    opacity: 1;
+}
+.singleTile:hover h3 {
+    color: white;
+}
+section#skills {
+    padding: 10px 0px;
+    background: var(--theme-accent-bg-light);
+}
+.imgCon img {
+    width: 100%;
+    max-width: 80px;
+    filter: grayscale(90%);
+    -webkit-filter: grayscale(90%);
+    transition: 0.4s ease;
+}
+
+.skillSingleCard {
+    width: 189px;
+    border: 1px solid var(--theme-accent-2);
+    background: var(--theme-accent-2);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    aspect-ratio: 0.95;
+    transition: 0.4s ease;
+    margin: 20px;
+}
+
+.skillCards {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.imgCon {
+    margin: 25px;
+}
+
+.skillSingleCard h3 {
+    color: #dddddd;
+    transition: 0.4s ease;
+}
+
+.skillSingleCard:hover {
+    background: var(--theme-secondary);
+    border-color: var(--theme-primary);
+}
+
+.skillSingleCard:hover h3 {
+    color: var(--theme-primary);
+}
+.skillSingleCard:hover img {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
 }
