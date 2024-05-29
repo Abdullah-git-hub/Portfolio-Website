@@ -64,4 +64,6 @@ $(".catagory").click(function () {
             .not("." + catagoryType)
             .hide("1000");
     }
+
+    $(this).addClass("activeCatagory").siblings().removeClass("activeCatagory");
 });
