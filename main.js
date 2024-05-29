@@ -49,3 +49,19 @@ function handleServicesCardCSS() {
         }
     }
 }
+
+// handling catagory
+$(".catagory").click(function () {
+    const catagoryType = $(this).attr("data-filter");
+
+    if (catagoryType == "all") {
+        $(".work").show("1000");
+    } else {
+        $(".work")
+            .filter("." + catagoryType)
+            .show("1000");
+        $(".work")
+            .not("." + catagoryType)
+            .hide("1000");
+    }
+});
