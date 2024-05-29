@@ -50,6 +50,7 @@ h6,
 p,
 a,
 li,
+small,
 button {
     font-family: "Sora", sans-serif;
 }
@@ -764,4 +765,89 @@ section#skills {
 .skillSingleCard:hover img {
     filter: grayscale(0);
     -webkit-filter: grayscale(0);
+}
+button.owl-dot.active span {
+    background: var(--theme-primary) !important;
+}
+
+button.owl-dot span {
+    background: #ffffff30 !important;
+}
+.testimonialCards {
+    width: 85%;
+    margin: 50px auto;
+}
+.testimonialTopLogoPhoto {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.testimonialPhoto img {
+    max-width: 100%;
+}
+
+.testimonialPhoto {
+    width: 120px;
+    border-radius: 10px 10px 10px 100%;
+    overflow: hidden;
+    /* border: 1px solid; */
+    aspect-ratio: 1;
+}
+
+.testimonialLogo img {
+    max-width: 100%;
+    max-height: 50px;
+}
+
+.testimonialLogo {
+    max-width: 50%;
+    /* max-height: 30px; */
+}
+
+.testimonialSingleCard {
+    background: var(--theme-accent-2);
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 350px;
+    margin: auto;
+}
+
+.textPart h1 {
+    color: var(--theme-primary);
+    font-size: 45px;
+}
+
+.textPart small {
+    color: #dddddd;
+}
+
+.textPart p {
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #dddddd;
+    line-height: 1.4;
+    text-align: justify;
+    word-break: break-all;
+}
+
+.textPart h3 {
+    margin: 8px 0px;
+}
+
+section#testimonial {
+    padding: 10px 0px;
+}
+
+.owl-dots {
+    margin-top: 40px !important;
+}
+.textPart img {
+    width: 50px !important;
+    margin-bottom: 25px;
+    transform: rotate(180deg);
 }
