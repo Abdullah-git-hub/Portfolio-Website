@@ -83,7 +83,7 @@ nav.topNav {
 .navMenu ul li {
     padding: 17px 0px;
     font-size: 15px;
-    margin-right: 30px;
+    margin: 0px 15px;
     display: flex;
     place-content: center;
     align-items: center;
@@ -796,8 +796,9 @@ select:focus {
     border: 1px solid var(--theme-primary);
 }
 textarea {
-    height: 150px;
+    height: 200px;
     max-width: 100%;
+    resize: none;
 }
 option:hover,
 option:active,
@@ -865,4 +866,111 @@ form#contactForm button:hover i {
 }
 .contactInfoText a:hover {
     color: var(--theme-primary);
+}
+.footerTop {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    width: 85%;
+    margin: auto;
+    margin-top: 80px;
+}
+
+section#footer {
+    padding: 10px 0px;
+    background-image: linear-gradient(
+        320deg,
+        rgb(42, 20, 84) 0%,
+        rgb(20, 12, 28) 50%
+    );
+}
+
+.footerTop img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+form#footerEmailSub {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    margin: 15px;
+    border: 1px solid var(--theme-primary);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+form#footerEmailSub * {
+    padding: 15px;
+    border: none;
+    outline: none;
+}
+
+form#footerEmailSub input {
+    background: var(--theme-accent-2);
+    font-size: 15px;
+    text-indent: 10px;
+}
+
+form#footerEmailSub button {
+    background: var(--theme-primary);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 30px;
+}
+.footerLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerLogo h3 {
+    letter-spacing: 1px;
+    color: #dddddd;
+    display: flex;
+    align-items: center;
+}
+
+.footerLogo h3::after {
+    content: "/>";
+    color: var(--theme-primary);
+    margin-left: 5px;
+    font-size: 30px;
+}
+
+.footerLogo h3::before {
+    content: "<";
+    color: var(--theme-primary);
+    margin-right: 5px;
+    font-size: 30px;
+}
+
+.footerBottomIcon .heroSecButton {
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid var(--theme-secondary);
+}
+
+.footerBottom {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footerBottom p {
+    color: #dddddd;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.footerBottom p a {
+    color: var(--theme-primary);
+    text-decoration: underline !important;
+    font-weight: 600;
 }

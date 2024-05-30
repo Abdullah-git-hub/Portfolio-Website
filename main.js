@@ -76,7 +76,7 @@ $(".owl-carousel").owlCarousel({
     responsiveBaseElement: ".testimonialCards",
     responsiveClass: true,
     autoplay: true,
-    autoplayTimeout: 2000,
+    autoplayTimeout: 1000,
     autoplayHoverPause: true,
     responsive: {
         0: {
